@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.svg-wrapper {
+  width: 100%;
+  height: auto;
+}
