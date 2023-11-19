@@ -46,7 +46,7 @@
   display: block;
 }
 
-.animated {
+.svg-wrapper image {
   animation-name: move;
   animation-duration: 20s;
   animation-iteration-count: infinite;

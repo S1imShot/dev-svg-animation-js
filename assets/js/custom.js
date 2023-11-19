@@ -1,7 +1,6 @@
 const installAnimatedPanel = () => {
   const animationPath = document.querySelectorAll(".animation-path");
   const buttons = document.querySelectorAll(".btn");
-  const animated = document.querySelector(".animated");
 
   function removeActiveClass() {
     buttons.forEach((item) => {
@@ -17,9 +16,12 @@ const installAnimatedPanel = () => {
     event.target.classList.add("active");
 
     const getBtnCase = event.target.getAttribute("data-animation");
+    const showIdPath = document.querySelector("#" + getBtnCase);
+    const animated = document.querySelector("image");
+    const animatedClassNow = animated.getAttribute("class");
 
-    const caseAnimation = document.querySelector("#" + getBtnCase);
-    caseAnimation.classList.add("show");
+    animated.classList.replace(animatedClassNow, "animation-" + getBtnCase);
+    showIdPath.classList.add("show");
   };
 
   buttons.forEach((btn) => {
